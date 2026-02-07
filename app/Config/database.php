@@ -56,29 +56,27 @@
                                        
                                      
                         
-                        class DATABASE_CONFIG {
-                        
-                                        public $default = array(
-                                            "datasource" => "Database/Mysql",
-                                            "persistent" => false,
-                                            "host" => null,
-                                            "login" => null,
-                                            "password" => null,
-                                            "database" => null,
-                                            "prefix" => "",
-                                            //"encoding" => "utf8",
-                                        );
-                                        
-                                        public $test = array(
-                                            "datasource" => "Database/Mysql",
-                                            "persistent" => false,
-                                            "host" => "localhost",
-                                            "login" => "user",
-                                            "password" => "password",
-                                            "database" => "test_database_name",
-                                            "prefix" => "",
-                                            //"encoding" => "utf8",
-                                        );
-                                        
-                                        }
-                        ?>
+                       class DATABASE_CONFIG {
+
+    public $default = array(
+        "datasource" => "Database/Mysql",
+        "persistent" => false,
+        "host" => "localhost",
+        "login" => "MySQL96",          // replace with your MySQL username
+        "password" => "Hesoyam@1234", // replace with your MySQL password
+        "database" => "qms_iso_lite",
+        "prefix" => "",
+        //"encoding" => "utf8",
+    );
+
+    public $test = array(
+        "datasource" => "Database/Mysql",
+        "persistent" => false,
+        "host" => "localhost",
+        "login" => "root",          // same as above
+        "password" => "yourpassword",
+        "database" => "qms_iso_lite",
+        "prefix" => "",
+        //"encoding" => "utf8",
+    );
+}
